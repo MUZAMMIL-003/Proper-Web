@@ -8,32 +8,48 @@
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-
+<style>
+    body{
+        background-color: #1A1A21;
+    }
+    .form-div{
+        background-color: #23252D;
+    }
+    input{
+        background-color: #23252D;
+    }
+</style>
 <body>
 
-    <div class="w-screen h-screen overflow-hidden flex items-center justify-center bg-gray-900 p-4">
-        <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
-            <h2 class="text-white text-2xl font-semibold text-center mb-6">Sign Up</h2>
+    <div class="w-screen h-screen overflow-hidden flex items-center justify-center  p-4">
+        <div class="form-div w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
+            <h2 class="text-white text-4xl font-semibold text-center mb-6">Sign Up</h2>
             <form class="space-y-4">
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-300">User Name</label>
-                    <input type="text" id="text"required
+                    <input type="text" id="text"  placeholder="ABC" required
                         class="mt-1 block w-full p-2.5 text-white bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 shadow-sm" />
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
-                    <input type="email" id="email" required
+                    <input type="email" id="email"  placeholder="ABC@gmail.com" required
                         class="mt-1 block w-full p-2.5 text-white bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 shadow-sm" />
                 </div>
                 <div>
                     <label for="password" class="block text-sm font-medium text-gray-300">Password</label>
-                    <input type="password" id="password" required
+                    <input type="password" id="password"  placeholder="**********" required
                         class="mt-1 block w-full p-2.5 text-white bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 shadow-sm" />
                 </div><br>
                 <button type="submit"
                     class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    Sign Up
+                   Create New Account
                 </button>
+                <a href="../Login/login.html">
+                <button type="button" 
+                    class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                   Already have an account....
+                </button>
+            </a>
             </form>
         </div>
     </div>
